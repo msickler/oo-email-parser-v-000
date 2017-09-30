@@ -11,7 +11,7 @@ class EmailParser
     end
 
 def parse
-  list = @emails.tr("", "")
+  list = @emails.tr(",", "")
   parsed = list.split().uniq
 
 end
