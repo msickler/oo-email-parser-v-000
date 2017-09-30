@@ -10,7 +10,9 @@ class EmailParser
     @emails = emails
     end
 
-def self.parse(email)
-  email = self.new
+def parse
+  list = @emails.tr("", "")
+  parsed = list.split().uniq
+  
 end
 end
